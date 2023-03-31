@@ -1,1 +1,1 @@
-# sncerp
+#https://hsojeong.github.io/sncerp/
