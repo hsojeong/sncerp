@@ -47,7 +47,7 @@ header a:hover {
   font-size: 18px; 
 }
 
-#loginsection input , #estabsection input ,#estabsection select {
+#loginsection input , #estabsection input ,#estabsection select , #personsection select , #documentssection select{
   outline: none;
 }
 
@@ -215,7 +215,7 @@ footer a.on {
 }
 
 #businesssection .checkspan > span , #detailsection .checkspan > span {
-  font-weight: 100 !important ;
+  font-weight: 300 !important ;
 }
 
 #businesssection .row , #detailsection .row {
@@ -269,11 +269,14 @@ footer a.on {
 #detailsection th , #detailsection td {
   padding: 2px 10px !important;
 }
+
 .detailtab {
   height: 63%;
 }
 
-
+.form-check-input:focus {
+  box-shadow: none !important;
+}
 
 
 /* 반응형 */
