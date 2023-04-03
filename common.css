@@ -8,7 +8,7 @@
   font-family: 'Nanum Gothic', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 }
 
-/* loginsection */
+
 
 section {
   overflow-y: auto;
@@ -33,6 +33,8 @@ header a:hover {
   color: #000;
 }
 
+
+/* loginsection */
 #loginsection input {
   width: 80%;
   border-radius: 3px;
@@ -47,7 +49,11 @@ header a:hover {
   font-size: 18px; 
 }
 
-#loginsection input , #estabsection input ,#estabsection select , #personsection select , #documentssection select{
+#loginsection input , 
+#estabsection input ,
+#estabsection select , 
+#personsection select , 
+#documentssection select{
   outline: none;
 }
 
@@ -59,7 +65,6 @@ input::placeholder {
 
 
 /* estabsection */
-
 h3 {
   font-size: 21px;
   color: #000;
@@ -101,7 +106,7 @@ h3 {
 
 .wrapper{
   width:100%;
-  height: 85%;  
+  height: 90%;  
 }
 
 .list {
@@ -137,6 +142,7 @@ h3 {
   background-color: #f4f4f4;
 }
 
+/* footer */
 footer {
   position: fixed;
   bottom: 0;
@@ -160,7 +166,6 @@ footer a.on {
 
 
 /* personsection */
-
 #personsection select {
   border-radius: 0px;
   border: 1px solid #d3d3d3;
@@ -175,11 +180,10 @@ footer a.on {
 
 .psersonwrapper {
     width:100%;
-    height: 87%;  
+    height: 91%;  
 }
 
 /* documentssection */
-
 #documentssection select {
   border-radius: 0px;
   border: 1px solid #d3d3d3;
@@ -202,7 +206,6 @@ footer a.on {
 }
 
 /* businesssection */
-
 .checkspan {
   padding: 2px 4px!important;
   border: 1px solid #d3d3d3;
@@ -297,24 +300,33 @@ footer a.on {
   }
 }
 
+
 @media (max-width:414px) {  
   .detailtab {
-    height: 40% !important;
+    height: 37% !important;
   }
   .businesstab {
-    height: 52% !important;
+    height: 53% !important;
 }
-  .wrapper{
-    height: 85%;  
+  #businesssection .wrapper{
+    height: 95% !important;  
+  }
+  #estabsection .wrapper{
+    height: 85% !important;  
   }
   .psersonwrapper {
-    height: 85.5%;  
+    height: 85.5% !important;  
+  }
+  #documentssection .wrapper{
+    height: 84% !important;  
+  }
 }
-}
+
+
 
 
 /* fold 반응형 */	
-@media (max-width:300px) {  
+@media (max-width:290px) {  
   .col-8 {
     width: 50%;
     margin-bottom: 10px !important;
@@ -336,9 +348,10 @@ footer a.on {
   }
   .grid th{
     padding: 5px !important; 
+    font-size: 12px !important; 
   }
   .grid td {
-    font-size: 11px;
+    font-size: 12px;
   }
   .row>* {
     padding-left: 0 !important;
@@ -352,12 +365,30 @@ footer a.on {
     justify-content: center;
   }
   .container {
-    margin-left: 20px;
+    margin-left: 26px;
   }
   .checkspan {
     padding-right: 5px !important;
   }
-  .detailtab .grid td {
-    font-size: 10px;
+  #businesssection .row, #detailsection .row {
+    padding-bottom: 0px !important;
+}
+  .mt {
+    margin-top: 0px !important;
+  }
+  #personsection select , #documentssection select {
+    width: 50% !important;
+  }
+  footer .d-flex > div:first-child {
+    padding-left: 2px;
+  }
+  .ml {
+    margin-left: 27% !important;
+  }
+  #estabsection select {
+    width: 126px !important;
+  }
+  .pdtop {
+    padding-top: 0px !important;
   }
 }
