@@ -79,7 +79,7 @@ h3 {
   border-radius: 0px;
   border: 1px solid #d3d3d3;
   font-size: 13px;
-  padding: 3px 5px;
+  padding: 4px 5px;
   background-color: #fff;
 }
 
@@ -202,9 +202,7 @@ footer a.on {
 /* businesssection */
 
 .checkspan {
-  font-size: 12px !important;
-  font-weight: 100 !important ;
-  padding: 2px 3px 2px 2px!important;
+  padding: 2px 4px!important;
   border: 1px solid #d3d3d3;
   text-align: end;
   color: #000 !important;
@@ -214,6 +212,10 @@ footer a.on {
 #businesssection span ,#detailsection span {
   font-size: 13px;
   font-weight: bold; 
+}
+
+#businesssection .checkspan > span , #detailsection .checkspan > span {
+  font-weight: 100 !important ;
 }
 
 #businesssection .row , #detailsection .row {
@@ -278,6 +280,15 @@ footer a.on {
 @media (max-width:376px) {  
   .spansize {
     font-size: 11px;
+  }
+  .telwidth {
+    width: 75%;
+  }
+  .mt {
+    margin-top: 10px;
+  }
+  .pdtop {
+    padding-top: 11px;
   }
 }
 
